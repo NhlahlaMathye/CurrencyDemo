@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Currency Demo</title>
+</head>
+<body>
+    <br>
+    <br>
+    <h3>USD CURRENCY CONVERTION APP</h3>
+    <br>
+    <br>
+    <table border="1">
+        <tr>
+            <td>ZAR</td>
+            <td>BDT</td>
+            <td>PKR</td>
+            <td>INR</td>
+        </tr>
+        <tbody>
+            <tr>
+                <td th:text=${Currencies.zAR}></td>
+                <td th:text=${Currencies.bDT}></td>
+                <td th:text=${Currencies.pKR}></td>
+                <td th:text=${Currencies.iNR}></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <br>
+    <form>
+        <input type="submit" value="REFRESH" name="refresh" />
+    </form>
+</body>
+</html>
